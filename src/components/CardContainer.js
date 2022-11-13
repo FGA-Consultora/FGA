@@ -2,12 +2,12 @@ import React from 'react'
 
 const CardContainer = () => {
   return <>
-    <div className="hero bg-lime-50 lg:px-20 lg:py-5 rounded-b-3xl mx-auto">
+    <div className="hero bg-blue-100 lg:px-20 lg:py-5 rounded-b-3xl mx-auto">
     <div className="hero-content flex-col lg:flex-row-reverse">
     <img src="/Map.webp" className="rounded-lg shadow-2xl min-w-sm md:max-w-sm" />
     <div>
-      <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-300 pb-2">Trabajamos en América Latina y en el mundo</p>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-yellow-500 pb-2">Trabajamos en América Latina y en el mundo</p>
+      <p className="py-6 text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
 
       <div className='grid-flow-col mx-auto'>
 
@@ -35,9 +35,9 @@ const CardContainer = () => {
     </div>
 
 
-    <div className="w-screen flex justify-center items-center pt-4 shadow-inner shadow-lg">
-        <div className='bg-slate-900 rounded-3xl ml-10 mb-5 pb-2 px-3'>
-            <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-base-100 py-3">Elegí nuestros servicios</p>
+    <div className="max-w-full flex justify-center items-center pt-4  ">
+        <div className='bg-slate-700 rounded-3xl ml-10 mb-5 pb-2'>
+            <p className="text-5xl font-bold text-amber-100 py-3 px-2">Elegí nuestros servicios</p>
         </div>
     </div>
 
@@ -45,62 +45,62 @@ const CardContainer = () => {
 
     <div className='lg:pl-20 lg:p-10 md:p-10 grid auto-cols-max items-center grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-10'>
         
-        <div className="card card-compact w-64 bg-orange-200 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-orange-200 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card1.webp" alt="Servicio de Industrias" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Servicio de Industrias</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-green-700">Saber más</button>
+                    <button className="btn bg-green-800 hover:bg-green-700 text-white">Saber más</button>
                 </div>
             </div>
         </div>
 
-        <div className="card card-compact w-64 bg-red-200 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-red-200 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card2.webp" alt="Protección contra Incendios" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Protección contra Incendios</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-green-700">Saber más</button>
+                    <button className="btn bg-green-800 hover:bg-green-700 text-white">Saber más</button>
                 </div>
             </div>
         </div>
 
-        <div className="card card-compact w-64 bg-blue-200 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-blue-200 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card3.webp" alt="Mediciones" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Mediciones</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-green-700">Saber más</button>
+                    <button className="btn bg-green-800 hover:bg-green-700 text-white">Saber más</button>
                 </div>
             </div>
         </div>
 
-        <div className="card card-compact w-64 bg-yellow-100 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-yellow-100 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card4.webp" alt="Obras en Construcción" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Obras en Construcción</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-green-700">Saber más</button>
+                    <button className="btn bg-green-800 hover:bg-green-700 text-white">Saber más</button>
                 </div>
             </div>
         </div>
 
-        <div className="card card-compact w-64 bg-green-200 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-green-200 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card5.webp" alt="Medioambiente" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Medioambiente</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-green-700">Saber más</button>
+                    <button className="btn bg-green-800 hover:bg-green-700 text-white">Saber más</button>
                 </div>
             </div>
         </div>
 
-        <div className="card card-compact w-64 bg-blue-400 shadow-xl ml-4 mb-5">
+        <div className="card card-compact w-64 bg-blue-400 shadow-xl ml-4 mb-5 text-black">
             <figure><img src="card6.webp" alt="Cotización" /></figure>
             <div className="card-body">
                 <h3 className="card-title">Pida una cotización</h3>
                 <div className="card-actions justify-end">
-                    <button className="btn bg-blue-600">Contacto</button>
+                    <button className="btn bg-blue-700 hover:bg-blue-600 text-white">Contacto</button>
                 </div>
             </div>
         </div>

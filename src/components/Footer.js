@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return <>
   <footer>
-  <div className="footer pl-10 p-8 bg-neutral text-neutral-content rounded-t-3xl">
+  <div className="footer pl-10 p-8 bg-slate-700 text-white rounded-t-3xl">
   <div>
     <span className="footer-title">Servicios</span> 
     <a className="link link-hover">Servicio de Industrias</a>
@@ -29,7 +29,7 @@ const Footer = () => {
     </div>
 </div>
 
-<div className="footer footer-center p-2 bg-gradient-to-r from-gray-600 to-base-100 text-base-content shadow-inner">
+<div className="footer footer-center p-2 bg-gradient-to-r from-gray-300 to-white text-black shadow-inner">
   <div>
     <p>Copyright © 2022 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-violet-900 font-strong">Web Ex Machina</strong></p>
   </div>
