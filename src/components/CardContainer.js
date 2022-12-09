@@ -4,7 +4,7 @@ const CardContainer = () => {
   return <>
     <div className="hero bg-blue-100 lg:px-20 lg:py-5 rounded-b-3xl mx-auto">
     <div className="hero-content flex-col lg:flex-row-reverse">
-    <img src="/Map.webp" className="rounded-lg shadow-2xl min-w-sm md:max-w-sm" />
+    <img src="/Map.webp" alt="..." className="rounded-lg shadow-2xl min-w-sm md:max-w-sm" />
     <div>
       <p className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-yellow-500 pb-2">Trabajamos en América Latina y en el mundo</p>
       <p className="py-6 text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>

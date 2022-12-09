@@ -3,8 +3,8 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CardContainer from './components/CardContainer';
 import Footer from './components/Footer';
-import { FloatingWhatsApp } from 'react-floating-whatsapp'
-import Programa from './lib/build/Programa';
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+import Carrousel from './components/Carrousel';
 
 function App() {
   return <>
