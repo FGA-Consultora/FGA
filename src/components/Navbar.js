@@ -69,6 +69,8 @@ return <>
         <li ><label htmlFor="my-drawer" className='btn w-full mb-5' onClick={clickHandler}>Blog</label> </li>
         <li ><label htmlFor="my-drawer" className='btn w-full mb-5' onClick={clickHandler}>Blog</label> </li>
         <li ><label htmlFor="my-drawer" className='btn w-full mb-5' onClick={clickHandler}>Blog</label> </li>
+        {/*Button disabled for mobile browser response*/}
+        <li ><label htmlFor="my-drawer" className='btn w-full mb-5 btn-disabled bg-white'></label> </li>
       </ul>
     </div>
   </div>
