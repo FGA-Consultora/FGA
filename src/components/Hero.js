@@ -5,9 +5,9 @@ import { useInView } from "react-intersection-observer"
 
 const Hero = () => {
   //Intersection observer Carrousel
-  const {ref: carrouselSlider1, inView: isSlider1Visible} = useInView()
-  const {ref: carrouselSlider2, inView: isSlider2Visible} = useInView()
-  const {ref: carrouselSlider3, inView: isSlider3Visible} = useInView()
+  const {ref: carrouselSlider1, inView: isSlider1Visible} = useInView({threshold:0.5})
+  const {ref: carrouselSlider2, inView: isSlider2Visible} = useInView({threshold:0.5})
+  const {ref: carrouselSlider3, inView: isSlider3Visible} = useInView({threshold:0.5})
 
   return <>
     <div className="h-[36rem]">
