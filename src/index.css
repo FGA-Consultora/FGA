@@ -4,6 +4,7 @@
 
 body {
   background-color: white;
+  overflow: overlay;
   /*
   background-image: url('./img/background.webp');
   background-repeat: no-repeat;
@@ -34,4 +35,42 @@ body {
 
 .scroll_black::-webkit-scrollbar-thumb{
   background-color:rgba(0, 0, 0, 0.25);
+}
+
+/*Carrousel Animation*/
+
+/*Titles*/
+.slider-title {
+  transform: translateX(100px);
+  opacity: 0;
+  transition: 800ms;
+}
+.slider-title-shower{
+  transform:translateX(0);
+  opacity: 1;
+  transition-delay: 250ms;
+}
+
+/*Texts*/
+.slider-text {
+  transform: translateX(-100px);
+  opacity: 0;
+  transition: 800ms;
+}
+.slider-text-shower{
+  transform:translateX(0);
+  opacity: 1;
+  transition-delay: 350ms;
+}
+
+/*Buttons*/
+.slider-btn {
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 800ms;
+}
+.slider-btn-shower{
+  transform:translateY(0);
+  opacity: 1;
+  transition-delay: 500ms;
 }
