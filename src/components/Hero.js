@@ -43,14 +43,14 @@ const Hero = () => {
           <div className={`slider-btn mt-4 ${isSlider2Visible ? 'slider-btn-shower' : ''}`}>
             <button className="md:ml-5 btn btn-outline btn-warning">Contacto</button>
           </div>
-        </div>  
+        </div>
 
         </div>
         <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/card52.webp)` }}>
 
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
             <div ref={carrouselSlider3} className={`slider-title ${isSlider3Visible ? 'slider-title-shower' : ''}`}>
-              <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-300 to-green-100">FGA - Consultora de
+              <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-500 to-green-100">FGA - Consultora de
                 <strong className="block font-extrabold text-white">Higiene, Seguridad</strong>y Medioambiente
               </div>
             </div>
