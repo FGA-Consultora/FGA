@@ -21,7 +21,7 @@ const Hero = () => {
                 <strong className="block font-extrabold text-white">Higiene, Seguridad</strong>y Medioambiente</h1>
               </div>
               <div className={`slider-text ${isSlider1Visible ? 'slider-text-shower' : ''}`}>
-              <h2 className="md:ml-5 mt-4 max-w-lg sm:text-xl lg:text-2xl sm:leading-relaxed text-white"> <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illotenetur fuga ducimus numquam ea!</strong></h2>
+                <h2 className="md:ml-5 mt-4 max-w-lg sm:text-xl lg:text-2xl sm:leading-relaxed text-white"> <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt illotenetur fuga ducimus numquam ea!</strong></h2>
               </div>
               <div className={`slider-btn mt-4 ${isSlider1Visible ? 'slider-btn-shower' : ''}`}>
                 <button className="md:ml-5 btn btn-outline btn-info">Contacto</button>

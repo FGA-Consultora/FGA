@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import CardContainer from './components/CardContainer';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <Navbar/>
     <Hero/>
     <CardContainer/>
+    <Contact/>
     <Footer/>
     <FloatingWhatsApp 
       accountName="FGA - Consultora" 

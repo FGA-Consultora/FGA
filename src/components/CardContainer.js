@@ -1,154 +1,167 @@
-import React from 'react'
-import { useInView } from "react-intersection-observer"
+import React from "react"
+import {useInView} from "react-intersection-observer"
 
 const CardContainer = () => {
-// Intersection Observer
-    const {ref: aboutUs, inView: isAboutUsVisible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: sectionMap, inView: isSectionMapVisible} = useInView({threshold:0.1, triggerOnce: true})
-//Cards Intersecton Observer
-    const {ref: CardObs1, inView: isCardObs1Visible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: CardObs2, inView: isCardObs2Visible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: CardObs3, inView: isCardObs3Visible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: CardObs4, inView: isCardObs4Visible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: CardObs5, inView: isCardObs5Visible} = useInView({threshold:0.1, triggerOnce: true})
-    const {ref: CardObs6, inView: isCardObs6Visible} = useInView({threshold:0.1, triggerOnce: true})
+  // Intersection Observer
+  const {ref: aboutUs, inView: isAboutUsVisible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: sectionMap1, inView: isSectionMap1Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: sectionMap2, inView: isSectionMap2Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  //Cards Intersecton Observer
+  const {ref: CardObs1, inView: isCardObs1Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: CardObs2, inView: isCardObs2Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: CardObs3, inView: isCardObs3Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: CardObs4, inView: isCardObs4Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: CardObs5, inView: isCardObs5Visible} = useInView({threshold: 0.1, triggerOnce: true})
+  const {ref: CardObs6, inView: isCardObs6Visible} = useInView({threshold: 0.1, triggerOnce: true})
 
-  return <>
-
-  {/*About Us Section*/}
-    <div className="hero bg-white lg:px-20 lg:py-5 mx-auto">
+  return (
+    <>
+      {/*About Us Section*/}
+      <div className="hero bg-white lg:px-20 lg:py-5 mx-auto">
         <div ref={aboutUs} className="hero-content flex-col lg:flex-row">
-            <img src="/deal.webp" alt="..." className={`rounded-lg shadow-2xl min-w-sm md:max-w-sm slider-text ${isAboutUsVisible ? 'slider-text-shower' : ''}`}/>
-            <div className={`sm:mx-10 md:mx-18 lg:mx-12 slider-title ${isAboutUsVisible ? 'slider-title-shower' : ''}`}>
-                <p className="px-1 italic text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-500 pb-2">Acerca de Nosotros</p>
-                <p className="py-6 text-xl text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Provident cupiditate voluptatem et in.</p>
+          <img src="/deal.webp" alt="..." className={`rounded-lg shadow-2xl min-w-sm md:max-w-sm slider-text ${isAboutUsVisible ? "slider-text-shower" : ""}`} />
+          <div className={`sm:mx-10 md:mx-18 lg:mx-12 slider-title ${isAboutUsVisible ? "slider-title-shower" : ""}`}>
+            <p className="text-5xl font-semibold text-amber-500 px-2">Acerca de Nosotros</p>
+            <p className="py-6 text-xl text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi. Provident cupiditate voluptatem et in.</p>
 
-                <div className='grid-flow-col mx-auto'>
+            <div className="grid-flow-col mx-auto">
+              <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-blue-800 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-4 h-4">
+                  <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                </svg>
+              </button>
 
-                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-blue-800 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" className="w-4 h-4">
-                        <path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                        </svg>
-                    </button>
+              <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-gradient-to-r from-amber-300 via-red-500 to-violet-500 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-4 h-4">
+                  <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                </svg>
+              </button>
 
-                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-gradient-to-r from-amber-300 via-red-500 to-violet-500 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-4 h-4">
-                        <path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-                        </svg>
-                    </button>
-
-                    <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-blue-400 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4">
-                        <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
-                        </svg>
-                    </button>
-
-                </div>
+              <button type="button" data-mdb-ripple="true" data-mdb-ripple-color="light" className="mx-1 bg-blue-400 inline-block px-6 py-2.5 mb-2 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" className="w-4 h-4">
+                  <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                </svg>
+              </button>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
 
+      {/*Map Section*/}
+      <div className="hero bg-green-100 lg:px-20 lg:py-5 mx-auto">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+          <img ref={sectionMap1} src="/Map.webp" alt="..." className={`h-72 rounded-lg shadow-2xl min-w-sm md:max-w-sm lg:mx-12 slider-btn ${isSectionMap1Visible ? "slider-btn-shower2" : ""}`} />
+          <div ref={sectionMap2} className={`sm:mx-10 md:mx-18 lg:mx-12 slider-btn ${isSectionMap2Visible ? "slider-btn-shower2" : ""}`}>
+            <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-amber-500 pb-2">Trabajamos en América Latina y en el mundo</p>
+            <p className="py-6 text-xl text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+          </div>
+        </div>
+      </div>
 
-    {/*Map Section*/}
-    <div className="hero bg-blue-100 lg:px-20 lg:py-5 mx-auto">
-    <div ref={sectionMap} className="hero-content flex-col lg:flex-row-reverse">
-    <img src="/Map.webp" alt="..." className={`h-72 rounded-lg shadow-2xl min-w-sm md:max-w-sm lg:mx-12 slider-btn ${isSectionMapVisible ? 'slider-btn-shower2' : ''}`}/>
-    <div className={`sm:mx-10 md:mx-18 lg:mx-12 slider-btn ${isSectionMapVisible ? 'slider-btn-shower2' : ''}`}>
-      <p className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-yellow-500 pb-2">Trabajamos en América Latina y en el mundo</p>
-      <p className="py-6 text-xl text-black">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      {/*Card Section Title*/}
+      <div className="max-w-full flex justify-center text-center items-center pt-4 bg-gray-50">
+        <div className="mb-5 pb-2">
+          <p className="text-5xl font-medium text-amber-500 px-2">Nuestros Servicios</p>
+        </div>
+      </div>
+
+      {/*Card Section*/}
+      <div className="max-w-full flex justify-center items-center pt-4 bg-gray-50">
+        <div className="grid lg:grid-cols-3 mx-auto sm:grid-cols-2">
+
+          <div ref={CardObs1} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs1Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card1.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
+
+          <div ref={CardObs2} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs2Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card2.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Protección contra Incendios</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
+
+          <div ref={CardObs3} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs3Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card3.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Mediciones</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
+
+          <div ref={CardObs4} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs4Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card4.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Obras en Construcción</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
+
+          <div ref={CardObs5} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs5Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card5.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Medioambiente</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
+
+          <div ref={CardObs6} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs6Visible ? "slider-btn-shower2" : ""}`}>
+            <img className="w-full h-48" src="card6.webp" alt="product" />
+            <div className="px-6 py-4">
+              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Pida una Cotización</h4>
+              <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing elit. Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
+            </div>
+            <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
+              Saber más&nbsp;
+              <svg className="mt-1" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 8l4 4-4 4M8 12h7" />
+              </svg>
+            </button>
+          </div>
 
         </div>
-        </div>
-    </div>
-
-
-    {/*Card Section Title*/}
-    <div className="max-w-full flex justify-center text-center items-center pt-4 bg-gray-50">
-        <div className='mb-5 pb-2'>
-            <p className="text-5xl font-medium text-amber-500 px-2">Nuestros Servicios</p>
-        </div>
-    </div>
-
-    {/*Card Section*/}
-    <div className="max-w-full flex justify-center items-center pt-4 bg-gray-50">
-    <div className="grid lg:grid-cols-3 mx-auto sm:grid-cols-2">
-    <div ref={CardObs1} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs1Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card1.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    <div ref={CardObs2} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs2Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card2.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Protección contra Incendios</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    <div ref={CardObs3} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs3Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card3.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Mediciones</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    <div ref={CardObs4} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs4Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card4.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Obras en Construcción</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    <div ref={CardObs5} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs5Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card5.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Medioambiente</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    <div ref={CardObs6} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs6Visible ? 'slider-btn-shower2' : ''}`}>
-        <img className="w-full h-48"
-            src="card6.webp"
-            alt="product" />
-        <div className="px-6 py-4">
-            <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Pida una Cotización</h4>
-            <p className="leading-normal text-gray-700">Lorem ipsum dolor, sit amet cons ectetur adipis icing
-                elit.
-                Praesen tium, quibusdam facere quo laborum maiores sequi nam tenetur laud.</p>
-        </div>
-        <button className='m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500'>Saber más&nbsp;<svg className='mt-1' xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8l4 4-4 4M8 12h7"/></svg></button>
-    </div>
-    
-    </div>
-    </div>
-  </>;
+      </div>
+    </>
+  )
 }
-
 export default CardContainer
-
