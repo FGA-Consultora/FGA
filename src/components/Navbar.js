@@ -1,15 +1,23 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
+
+
+
 
 const Navbar = () => {
   //Drawer
   const [isOpen, setIsOpen] = useState(false);
 
-  //Timer reference on close
-  //const clickCondition = () => {document.getElementById("uldrawer").className = "drawer fixed h-screen w-full -z-10";}
+  //Checkbox Drawer solución
+  const miCheckbox = () => {document.getElementById("my-drawer").click()}
 
-  //Drawer button
+  
+
+  //Timer reference on close
+  const clickCondition = () => {document.getElementById("uldrawer").className = "drawer fixed h-screen w-full -z-10";}
+
+  //Drawer button para enlaces con LINK
   const clickHandler= () => {
     //Stop body-scroll on opened Drawer
     setIsOpen(!isOpen);
@@ -27,13 +35,34 @@ const Navbar = () => {
       document.getElementById("uldrawer").className = "drawer fixed h-screen w-full z-20";
     }
     else{
-      // irrelevante al recargar     setTimeout(clickCondition, 100);
-      setTimeout(()=>{window.location.reload(false);}, 0);
+      
+      setTimeout(()=>{clickCondition()}, 200);
+      miCheckbox()
+      
     }
-
-    // ni el drawer sale y vuelve a refreshear la pagina anterior window.location.reload()
-    //en el button =      onClick={() => window.location.reload()}
   }
+    
+    const clickHandler2= () => {
+      setIsOpen(!isOpen);
+      if (isOpen === true) {
+        document.body.style.overflow = 'auto';
+        document.body.style.overflow = 'overlay';
+      }
+      else{
+        document.body.style.overflow = 'hidden';
+      }
+      if(document.getElementById("uldrawer").className !== "drawer fixed h-screen w-full z-20") {
+        document.getElementById("uldrawer").className = "drawer fixed h-screen w-full z-20";
+      }
+      else{
+        //Sirve para que funcione el clickeo por fuera del drawer al cerrar
+        setTimeout(()=>{clickCondition()},200);
+      }
+    }
+    
+    //SI SIRVE, PORQUE PUEDE HACER F5 LA PAGINA PRINCIPAL.No sirve porque no tengo server al subirlo. También el drawer no sale y vuelve a refreshear la pagina anterior window.location.reload()
+    //en el button =      onClick={() => window.location.reload()}
+  
 
  /* LOGICA DE ... ACTUALIZAR TWITTER
   //Listener Dropdown
@@ -63,58 +92,59 @@ return <>
     <input id="my-drawer" type="checkbox" className="drawer-toggle"/>
     <div className="drawer-side">
   {/*Drawer Button clickHandler*/}
-      <label htmlFor="my-drawer" className="drawer-overlay" onClick={clickHandler} ></label>
-      <ul className='p-2 overflow-y-auto w-80 bg-white flex-col scroll_custom scroll_black'>
-
+  {/*IMPORTANTE USAR clickHandler2 o no funciona salir tocando fuera del drawer*/}
+      <label htmlFor="my-drawer" className="drawer-overlay" onClick={clickHandler2} ></label>
+      <ul className='p-2 overflow-y-auto w-80 bg-white flex-col scroll_custom scroll_black'>        
+  {/*IMPORTANTE USAR clickHandler2 o no funciona la X de Servicio*/}
         {/*Drawer Title*/}
-        <li className='flex mb-1 '><div className='mr-16 ml-24 mt-2.5 font-bold text-lg text-sky-800'>SERVICIOS</div><label htmlFor="my-drawer"className='btn btn-ghost btn-circle' onClick={clickHandler} ><svg className="fill-current text-amber-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></label></li>
+        <li className='flex mb-1 '><div className='mr-16 ml-24 mt-2.5 font-bold text-lg text-sky-800'>SERVICIOS</div><label htmlFor="my-drawer"className='btn btn-ghost btn-circle' onClick={clickHandler2} ><svg className="fill-current text-amber-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></label></li>
 
         {/*Collapse inside Drawer*/}
         <ul className="menu font-semibold text-sky-800">
 
-            <Link to='Industria'>
+            <Link to='/Industria'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Servicios de Industria</label>
               </li>
             </Link>
 
-            <Link to='Construccion'>
+            <Link to='/Construccion'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Construcción</label>
               </li>
             </Link>
 
-            <Link to='Capacitaciones'>
+            <Link to='/Capacitaciones'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Capacitaciones (Res. 905/15)</label>
               </li>
             </Link>
 
-            <Link to='Medioambiente'>
+            <Link to='/Medioambiente'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Medioambiente</label>
               </li>
             </Link>
 
-            <Link to='Autoproteccion'>
+            <Link to='/Autoproteccion'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Sistemas de Autoprotección</label>
               </li>
             </Link>
 
-            <Link to='Consorcio'>
+            <Link to='/Consorcio'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Servicios de Consorcio</label>
               </li>
             </Link>
 
-            <Link to='Seguridad'>
+            <Link to='/Seguridad'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Programa de Seguridad en Obra</label>
               </li>
             </Link>
 
-            <Link to='Mediciones'>
+            <Link to='/Mediciones'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Mediciones</label>
               </li>
@@ -219,7 +249,7 @@ return <>
         </button>
       </Link>
 
-      <Link to="Servicios">
+      <Link to="/Servicios">
         <button className='drawer-button hidden btn btn-ghost z-10 font-semibold text-lg lg:flex px-2 text-sky-800'>Servicios</button>
       </Link>
 
@@ -262,7 +292,7 @@ return <>
       */}
 
     {/*Contacto*/}
-    <Link to="Contacto">
+    <Link to="/Contacto">
       <button className="bg-amber-500 hover:bg-amber-400 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-3">CONTACTO</button>
     </Link>
     </div>
