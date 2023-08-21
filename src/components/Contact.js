@@ -30,7 +30,7 @@ const Contact = () => {
                 </label>
                 <textarea rows="4" name="mensaje" id="mensaje" placeholder="Escribí tu consulta aquí" className="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
               </div>
-              <div>
+              <div className="text-center">
                 <button type="submit" value="send" className="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none">Enviar</button>
               </div>
             </form>
