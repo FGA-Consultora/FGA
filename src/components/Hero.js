@@ -18,8 +18,8 @@ const Hero = () => {
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
               
               <div ref={carrouselSlider1} className={`slider-title ${isSlider1Visible ? 'slider-title-shower' : ''}`}>
-                <h1 className="pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-200">FGA - Consultora de
-                <strong className="block font-extrabold text-white">Higiene, Seguridad</strong>y Medioambiente</h1>
+                <h1 className="pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-200">FGA - Consultora de&nbsp;
+                <strong className="block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente</h1>
               </div>
               <div className={`slider-text ${isSlider1Visible ? 'slider-text-shower' : ''}`}>
                 <h2 className="md:ml-5 mt-4 max-w-lg sm:text-xl lg:text-2xl mb-2 sm:leading-relaxed text-white"> <strong>Garantizamos el mejor servicio en Prevención, Seguriad y Salud</strong></h2>
@@ -36,8 +36,8 @@ const Hero = () => {
           
         <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
           <div ref={carrouselSlider2} className={`slider-title ${isSlider2Visible ? 'slider-title-shower' : ''}`}>
-            <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-100">FGA - Consultora de
-              <strong className="block font-extrabold text-white">Higiene, Seguridad</strong>y Medioambiente
+            <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-100">FGA - Consultora de&nbsp;
+              <strong className="block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente
             </div>
           </div>
           <div className={`slider-text ${isSlider2Visible ? 'slider-text-shower' : ''}`}>
@@ -55,8 +55,8 @@ const Hero = () => {
 
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
             <div ref={carrouselSlider3} className={`slider-title ${isSlider3Visible ? 'slider-title-shower' : ''}`}>
-              <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-500 to-green-100">FGA - Consultora de
-                <strong className="block font-extrabold text-white">Higiene, Seguridad</strong>y Medioambiente
+              <div className=" pb-2 text-3xl md:text-6xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-600 via-green-500 to-green-100">FGA - Consultora de&nbsp;
+                <strong className="block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente
               </div>
             </div>
             <div className={`slider-text ${isSlider3Visible ? 'slider-text-shower' : ''}`}>

@@ -102,6 +102,12 @@ return <>
         {/*Collapse inside Drawer*/}
         <ul className="menu font-semibold text-sky-800">
 
+            <Link to='/'>
+              <li className='grid grid-flow-col'>
+                <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Home</label>
+              </li>
+            </Link>
+
             <Link to='/Industria'>
               <li className='grid grid-flow-col'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Servicios de Industria</label>
