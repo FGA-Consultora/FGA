@@ -10,7 +10,7 @@ const Industria = () => {
         </h5>
     </div>
 
-    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-xs sm:text-sm md:text-base lg:text-lg py-8 font-medium justify-center text-center items-center">
+    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-sm sm:text-sm md:text-base lg:text-lg py-8 font-medium justify-center text-center items-center">
 
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">
