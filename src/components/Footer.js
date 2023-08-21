@@ -63,7 +63,7 @@ const Footer = () => {
     {/*Si o si tiene que ser <a> para que funcione el href */}
     <a href="https://wa.me/+54XXXXXXXXXX?" className="link link-hover">+54 XXXX-XXXX</a>
 
-    <div className="link link-hover" onClick={() => window.location = 'mailto:yourmail@domain.com'}>info@fgaconsultora.com.ar</div>
+    <div className="link link-hover" onClick={() => window.location = 'mailto:yourmail@domain.com'}>info@fgaconsultora.com</div>
 
   </div> 
   {/*Redes sociales, actualizar TWITTER
