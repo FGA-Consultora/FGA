@@ -43,7 +43,6 @@ function App() {
 
       <Contact/>
       <Footer/>
-      <Scroll/>
       <FloatingWhatsApp 
         accountName="FGA - Consultora" 
         allowEsc
@@ -58,6 +57,7 @@ function App() {
         notificationDelay={10000}
         chatboxClassName="text-black"
         />
+        <Scroll/>
 
 
 
