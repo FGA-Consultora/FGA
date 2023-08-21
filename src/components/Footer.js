@@ -1,24 +1,72 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+  };
+
   return <>
   <footer>
-  <div className="footer pl-10 p-8 bg-slate-700 text-white">
+  <div className="footer pl-10 p-8 bg-sky-800 text-white">
+
   <div>
-    <span className="footer-title">Servicios</span> 
-    <a className="link link-hover">Servicio de Industrias</a>
-    <a className="link link-hover">Protección contra Incendios</a>
-    <a className="link link-hover">Mediciones</a>
-    <a className="link link-hover">Obras en Construcción</a>
-    <a className="link link-hover">Medioambiente</a>
+    <span className="footer-title">Servicios</span>
+    
+    <Link to='Industria'>
+      <div className="link link-hover" onClick={scrollToTop}>Servicio de Industrias</div>
+    </Link>
+
+    <Link to='Construccion'>
+      <div className="link link-hover" onClick={scrollToTop}>Obras en Construcción</div>
+    </Link>
+
+    <Link to='Capacitaciones'>
+      <div className="link link-hover" onClick={scrollToTop}>Capacitaciones (Res. 905/15)</div>
+    </Link>
+
+    <Link to='Medioambiente'>
+      <div className="link link-hover" onClick={scrollToTop}>Medioambiente</div>
+    </Link>
   </div> 
+  {/*Continuación*/}
+  <div>
+    <span className="footer-title"><br></br></span>
+    
+    <Link to='Autoproteccion'>
+      <div className="link link-hover" onClick={scrollToTop}>Sistemas de Autoprotección</div>
+    </Link>
+
+    <Link to='Consorcio'>
+      <div className="link link-hover" onClick={scrollToTop}>Servicios de Consorcio</div>
+    </Link>
+
+    <Link to='Seguridad'>
+      <div className="link link-hover" onClick={scrollToTop}>Programas de Seguridad en Obra</div>
+    </Link>
+
+    <Link to='Mediciones'>
+      <div className="link link-hover" onClick={scrollToTop}>Mediciones</div>
+    </Link>
+  </div> 
+
   <div>
     <span className="footer-title">Empresa</span> 
-    <a className="link link-hover">Acerca de nosotros</a>
-    <a className="link link-hover">Contacto</a>
-    <a className="link link-hover">+54 XXXX - XXXX</a>
-    <a className="link link-hover">info@fgaconsultora.com</a>
+
+    <Link to='Nosotros'>
+      <div className="link link-hover" onClick={scrollToTop}>Acerca de nosotros</div>
+    </Link>
+
+    <Link to='Contactos'>
+      <div className="link link-hover" onClick={scrollToTop}>Contacto</div>
+    </Link>
+    {/*Si o si tiene que ser <a> para que funcione el href */}
+    <a href="https://wa.me/+54XXXXXXXXXX?" className="link link-hover">+54 XXXX-XXXX</a>
+
+    <div className="link link-hover" onClick={() => window.location = 'mailto:yourmail@domain.com'}>info@fgaconsultora.com.ar</div>
+
   </div> 
+  {/*Redes sociales, actualizar TWITTER
  <div>
     <span className="footer-title">Redes sociales</span> 
     <div className="grid grid-flow-col gap-4">
@@ -27,11 +75,12 @@ const Footer = () => {
       <a><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" className="fill-current"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path></svg></a>
     </div>
     </div>
+    */}
 </div>
 
 <div className="footer footer-center p-2 bg-gradient-to-r from-gray-300 to-white text-black shadow-inner">
   <div>
-    <p>Copyright © 2022 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-violet-900 font-strong">Web Ex Machina</strong></p>
+    <p>Copyright © 2023 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-violet-900 font-strong">Web Ex Machina</strong></p>
   </div>
 </div>
 
