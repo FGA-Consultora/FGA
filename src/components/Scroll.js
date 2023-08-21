@@ -30,7 +30,7 @@ const Scroll = () => {
   return <>
   
   <button onClick={backToTop} title="Go To Top"
-        className={`transition ease-in-out duration-300 shadow-2xl fixed z-90 bottom-28 right-7 border-0 w-14 h-14 rounded-full drop-shadow-md bg-sky-700 hover:bg-sky-600 text-white text-3xl font-bold ${showButton ? "inline-block" : "hidden"}`}>🡹</button>
+        className={`transition ease-in-out duration-300 shadow-2xl fixed z-90 bottom-28 right-7 border-0 w-14 h-14 rounded-full drop-shadow-md bg-sky-700 hover:bg-sky-600 text-white text-4xl font-extrabold ${showButton ? "inline-block" : "hidden"}`}>&#129145;</button>
   
   </>;
 };
