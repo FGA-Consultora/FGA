@@ -10,8 +10,8 @@ const Scroll = () => {
 
     const handleScroll = () => {
       if (
-        document.body.scrollTop > 300 ||
-        document.documentElement.scrollTop > 300
+        document.body.scrollTop > 100 ||
+        document.documentElement.scrollTop > 100
       ) {
         setShowButton(true);
       } else {
