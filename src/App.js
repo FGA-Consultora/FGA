@@ -24,8 +24,9 @@ function App() {
       <Navbar/>
 
       <Routes>
-      <Route path='*' element={<Navigate to='/'/>}/>
+
         <Route index element={<><Hero/><About/><CardContainer/></>}></Route>
+        <Route path='*' element={<><Hero/><About/><CardContainer/></>}/>
         <Route path='Nosotros' element={<><About/><CardContainer/></>}></Route>
         <Route path='Servicios' element={<CardContainer/>}></Route>
         <Route path='Contactos' element={<></>}></Route>
