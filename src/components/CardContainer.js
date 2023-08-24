@@ -24,19 +24,19 @@ const CardContainer = () => {
       {/*Card Section Title*/}
       <div className="max-w-full flex justify-center text-center items-center pt-4 bg-amber-50">
         <div className="mb-5 pb-2">
-          <p className="drop-shadow-md text-5xl font-semibold text-amber-500 px-2">Nuestros Servicios</p>
+          <p className="font-Bebas drop-shadow-md text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-semibold text-amber-500 pt-4">Nuestros Servicios</p>
         </div>
       </div>
 
       {/*Card Section*/}
-      <div className="max-w-full flex justify-center items-center pt-4 bg-amber-50">
+      <div className="font-Roboto text-lg max-w-full flex justify-center items-center py-4 bg-amber-50">
         <div className="grid lg:grid-cols-3 mx-auto sm:grid-cols-2">
 
           <div ref={CardObs1} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs1Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card1.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
-              <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según Ley 12587. Capacitaciones específicas. Procedimientos de trabajo seguros...</p>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
+              <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según Ley 12587. Procedimientos de trabajo seguros...</p>
             </div>
             <Link to="/Industria" onClick={scrollToTop}>
             <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
@@ -52,7 +52,7 @@ const CardContainer = () => {
           <div ref={CardObs2} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs2Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card4.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Obras en Construcción</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Obras en Construcción</h4>
               <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según Dec. 911/96. Demoliciones y Excavaciones. Trabajo en altura...</p>
             </div>
             <Link to="/Construccion" onClick={scrollToTop}>
@@ -69,7 +69,7 @@ const CardContainer = () => {
           <div ref={CardObs3} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs3Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card888.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Capacitaciones (Res. 905/15)</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Capacitaciones (Res. 905/15)</h4>
               <p className="leading-normal text-sky-700">Instrucciones de Seguridad e Higiene. Incendio y Extintores. Entrenamiento de brigadas de Emergencia...</p>
             </div>
             <Link to="/Capacitaciones" onClick={scrollToTop}>
@@ -86,7 +86,7 @@ const CardContainer = () => {
           <div ref={CardObs4} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs4Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card5.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Medioambiente</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Medioambiente</h4>
               <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según normativa nacional y provincial. DJJ de residuos Especiales y Peligrosos...</p>
             </div>
             <Link to="/Medioambiente" onClick={scrollToTop}>
@@ -103,7 +103,7 @@ const CardContainer = () => {
           <div ref={CardObs5} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs5Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card666.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Sistemas de Autoprotección (Ley 5920 CABA)</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Sistemas de Autoprotección (Ley 5920 CABA)</h4>
               <p className="leading-normal text-sky-700">Cálculo y estimación de riesgos. DJJ y presentación ante defensa civil...</p>
             </div>
             <Link to="/Autoproteccion" onClick={scrollToTop}>
@@ -120,7 +120,7 @@ const CardContainer = () => {
           <div ref={CardObs6} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs6Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card555.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Servicios de Consorcio</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Servicios de Consorcio</h4>
               <p className="leading-normal text-sky-700">Relevamiento general de riesgos de trabajo. Análisis de potabilidad de agua. Simulacro y Plan de Evacuaci...</p>
             </div>
             <Link to="/Consorcio" onClick={scrollToTop}>
@@ -137,7 +137,7 @@ const CardContainer = () => {
           <div ref={CardObs7} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs7Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card777.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Programas de Seguridad en Obra</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Programas de Seguridad en Obra</h4>
               <p className="leading-normal text-sky-700">Aviso de Obra. Excavación. Programa 51. Demolición. Programa 35. Progr...</p>
             </div>
             <Link to="/Seguridad" onClick={scrollToTop}>
@@ -154,7 +154,7 @@ const CardContainer = () => {
           <div ref={CardObs8} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs8Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card3.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Mediciones</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Mediciones</h4>
               <p className="leading-normal text-sky-700">Puesta a Tierra y Continuidad de las Masas. Medición de Ruido. Medición de Co2 (Dióxido de Carbono)...</p>
             </div>
             <Link to="/Mediciones" onClick={scrollToTop}>
@@ -171,7 +171,7 @@ const CardContainer = () => {
           <div ref={CardObs9} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs9Visible ? "slider-btn-shower2" : ""}`}>
             <img className="w-full h-48" src="card6.webp" alt="product" />
             <div className="px-6 py-4">
-              <h4 className="mb-3 text-xl font-semibold tracking-tight text-amber-600">Pida una Cotización</h4>
+              <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Pida una Cotización</h4>
               <p className="leading-normal text-sky-700">Nuestro compromiso es con el cliente y ayudamos a que sus objetivos puedan cumplirse.</p>
             </div>
             <Link to="/Contactos" onClick={scrollToTop}>

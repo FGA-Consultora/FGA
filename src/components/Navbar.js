@@ -94,10 +94,10 @@ return <>
   {/*Drawer Button clickHandler*/}
   {/*IMPORTANTE USAR clickHandler2 o no funciona salir tocando fuera del drawer*/}
       <label htmlFor="my-drawer" className="drawer-overlay" onClick={clickHandler2} ></label>
-      <ul className='p-2 overflow-y-auto w-80 bg-white flex-col scroll_custom scroll_black'>        
+      <ul className='font-Roboto text-lg p-2 overflow-y-auto w-80 bg-white flex-col scroll_custom scroll_black'>        
   {/*IMPORTANTE USAR clickHandler2 o no funciona la X de Servicio*/}
         {/*Drawer Title*/}
-        <li className='flex mb-1 '><div className='mr-16 ml-24 mt-2.5 font-bold text-lg text-sky-800'>SERVICIOS</div><label htmlFor="my-drawer"className='btn btn-ghost btn-circle' onClick={clickHandler2} ><svg className="fill-current text-amber-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></label></li>
+        <li className='flex mb-1'><div className='font-Oswald mr-16 ml-24 mt-2.5 font-bold text-2xl text-sky-800'>SERVICIOS</div><label htmlFor="my-drawer"className='btn btn-ghost btn-circle' onClick={clickHandler2} ><svg className="fill-current text-amber-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></label></li>
 
         {/*Collapse inside Drawer*/}
         <ul className="menu font-semibold text-sky-800">
@@ -221,7 +221,7 @@ return <>
 
         {/*CONTACTO in Drawer*/}
         <Link to="Contactos">
-          <li ><label htmlFor="my-drawer" className='bg-sky-800 btn w-full mb-5 text-white' onClick={clickHandler}>Contacto</label> </li>
+          <li ><label htmlFor="my-drawer" className='text-lg bg-sky-800 btn w-full mb-5 text-white' onClick={clickHandler}>Contacto</label> </li>
         </Link>
 
         {/*Button disabled for mobile browser response*/}
@@ -251,24 +251,30 @@ return <>
 
       <Link to="/"> 
         <button className="grid grid-flow-col z-10 invisible lg:visible">
-          <p className='text-sky-800 text-lg btn btn-ghost px-2'>HOME</p>
+          <p className='xl:mx-5 font-Roboto text-sky-800 text-xl btn btn-ghost normal-case px-2'>Home</p>
+        </button>
+      </Link>
+
+      <Link to="/Nosotros"> 
+        <button className="grid grid-flow-col z-10 invisible lg:visible">
+          <p className='xl:mx-3 font-Roboto hidden mn:flex  text-sky-800 text-xl btn btn-ghost normal-case px-2'>¿Quiénes Somos?</p>
         </button>
       </Link>
 
       <Link to="/Servicios">
-        <button className='drawer-button hidden btn btn-ghost z-10 font-semibold text-lg lg:flex px-2 text-sky-800'>Servicios</button>
+        <button className='xl:mx-3 font-Roboto drawer-button hidden btn btn-ghost normal-case text-xl lg:flex px-2 text-sky-800'>Servicios</button>
       </Link>
 
-      <a href="https://wa.me/+54XXXXXXXXXX?" className="grid grid-flow-col z-10 text-lg btn btn-ghost invisible lg:visible px-2">
-        <p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5 my-0.5 text-green-600"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></p>
-        <p className='whitespace-nowrap text-sky-800'>+54 XXXX-XXXX</p>
-      </a>
-
-      <button className="btn btn-ghost lowercase grid grid-flow-col text-lg z-10 invisible lg:visible px-2" onClick={() => window.location = 'mailto:yourmail@domain.com'}>
-        <p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 my-0.5 mr-0.5 text-amber-600"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg></p>
-        <p className='text-sky-800'>info@fgaconsultora.com</p>
+      <button className="btn btn-ghost lowercase grid grid-flow-col text-lg z-10 invisible lg:visible px-2" onClick={() => window.location = 'mailto:info@fgaconsultora.com.ar'}>
+        {/*<p><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5 my-0.5 mr-0.5 text-amber-600"><path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" /></svg></p>*/}
+        <p className='xl:mx-3 font-Roboto text-xl text-sky-800'>info&#64;fgaco&#110;&#115;ul&#116;ora&#46;com&#46;ar</p>
       </button>
 
+      <div className="grid grid-flow-col z-10 text-lg font-semibold bg-white invisible lg:visible px-2">
+        {/*<p><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" className="w-5 h-5 my-0.5 text-green-600"><path fill="currentColor" d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/></svg></p>*/}
+        <p className='xl:mx-3 font-Roboto text-xl whitespace-nowrap text-sky-800'>+54 XX XXXX-XXXX</p>
+      </div>
+    
     </div>
 
 
@@ -299,7 +305,7 @@ return <>
 
     {/*Contacto*/}
     <Link to="/Contacto">
-      <button className="bg-amber-500 hover:bg-amber-400 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-3">CONTACTO</button>
+      <button className="font-Roboto text-xl flex bg-amber-500 hover:bg-amber-400 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-5">CONTACTO</button>
     </Link>
     </div>
   </div>

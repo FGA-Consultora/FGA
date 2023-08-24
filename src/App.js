@@ -20,7 +20,7 @@ import Mediciones from './services/Mediciones';
 function App() {
   return <>
     <BrowserRouter>
-
+      <Scroll/>
       <Navbar/>
 
       <Routes>
@@ -57,9 +57,6 @@ function App() {
         notificationDelay={10000}
         chatboxClassName="text-black"
         />
-        <Scroll/>
-
-
 
     </BrowserRouter>
   </>;

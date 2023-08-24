@@ -8,7 +8,7 @@ const Footer = () => {
 
   return <>
   <footer>
-  <div className="footer pl-10 p-8 bg-sky-800 text-white">
+  <div className="font-Oswald text-lg footer pl-10 p-8 bg-sky-800 text-white">
 
   <div>
     <span className="footer-title">Servicios</span>
@@ -63,7 +63,7 @@ const Footer = () => {
     {/*Si o si tiene que ser <a> para que funcione el href */}
     <a href="https://wa.me/+54XXXXXXXXXX?" className="link link-hover">+54 XXXX-XXXX</a>
 
-    <div className="link link-hover" onClick={() => window.location = 'mailto:yourmail@domain.com'}>info@fgaconsultora.com</div>
+    <div className="link link-hover" onClick={() => window.location = 'mailto:yourmail@domain.com'}>info@fgaconsultora.com.ar</div>
 
   </div> 
   {/*Redes sociales, actualizar TWITTER
@@ -78,7 +78,7 @@ const Footer = () => {
     */}
 </div>
 
-<div className="footer footer-center p-2 bg-gradient-to-r from-gray-300 to-white text-black shadow-inner">
+<div className="font-Roboto text-lg footer footer-center p-2 bg-gradient-to-r from-gray-300 to-white text-black shadow-inner">
   <div>
     <p>Copyright © 2023 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-violet-900 font-strong">Web Ex Machina</strong></p>
   </div>

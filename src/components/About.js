@@ -9,12 +9,12 @@ const About = () => {
   return <>
   
   {/*About Us Section*/}
-  <div className="hero bg-white lg:px-20 lg:py-5 mx-auto">
+  <div className="hero h-[55rem] sm:h-[48rem] lg:h-[45rem]  bg-white lg:px-20 lg:py-5 mx-auto">
         <div ref={aboutUs} className="hero-content flex-col lg:flex-row">
-          <img src="/deal.webp" alt="..." className={`rounded-lg shadow-2xl min-w-sm md:max-w-sm slider-text ${isAboutUsVisible ? "slider-text-shower" : ""}`} />
+          <img src="/deal.webp" alt="..." className={`rounded-lg shadow-2xl max-w-sm slider-text ${isAboutUsVisible ? "slider-text-shower" : ""}`} />
           <div className={`sm:mx-10 md:mx-18 lg:mx-12 slider-title ${isAboutUsVisible ? "slider-title-shower" : ""}`}>
-            <p className="drop-shadow-md max-w-full flex justify-center text-center items-center text-5xl font-semibold  text-amber-500 px-2">Acerca de Nosotros</p>
-            <p className="py-6 text-xl text-sky-800">Somos un equipo de profesionales expertos con el objetivo de resolver problemas, asistiendo a nuestros clientes en materia de Seguridad, Higiene y Medioambiente. Garantizamos excelentes servicios, acompañamiento en todo el proceso, y la mejor asesoría que el mercado puede ofrecer hoy en día. Nuestros clientes son la prioridad y ayudamos a que sus objetivos puedan cumplirse.</p>
+            <p className="italic font-Bebas drop-shadow-md max-w-full flex justify-center text-center items-center text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold  text-amber-500 px-2">¿Quiénes somos?</p>
+            <p className="font-Roboto py-6 text-xl md:text-2xl text-sky-800">Somos un equipo de profesionales con el objetivo de asistir a nuestros clientes en materia de Seguridad, Higiene y Medioambiente. Garantizamos excelentes servicios, acompañamiento en todo el proceso y la mejor asesoría hoy en día. Nuestros clientes son la prioridad y ayudamos a que sus objetivos se cumplan.</p>
 
 {/*TWITTER DESACTUALIZADO
             <div className="grid-flow-col mx-auto">
@@ -44,36 +44,36 @@ const About = () => {
 
       {/*Why us*/}
       {/*Card Section Title*/}
-      <div className="pt-4 bg-cover" style={{ backgroundImage: `url(/About.webp)` }}>
+      <div className="pt-4 h-[45rem] bg-cover" style={{ backgroundImage: `url(/About.webp)` }}>
         <div className="mb-5 pb-2 text-center ">
-          <p className="text-5xl font-medium text-amber-200 drop-shadow-md px-2">¿Por qué elegirnos?</p>
+          <p className="font-Bebas pt-5 text-7xl font-medium text-amber-200 drop-shadow-md px-2">¿Por qué elegirnos?</p>
         </div>
 
       {/*Card Section*/}
-      <div className="max-w-full flex justify-center items-center pt-4">
-        <div className="grid gap-x-16 lg:grid-cols-2 mx-auto sm:grid-cols-1">
+      <div className="hero max-w-full text-center pt-18 lg:pt-28">
+        <div className="grid gap-4 lg:gap-16 lg:grid-cols-2 sm:grid-cols-1">
 
-          <div className="max-w-md mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
+          <div className="p-1 sm:p-5 mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
             <div className="px-6 py-2">
-              <p className="drop-shadow-md mb-3 text-md sm:text-md md:text-xl lg:text-2xl tracking-tight text-amber-300 "><span className="text-amber-600">➲ </span> Ofrecemos atención personalizada a clientes</p>
+              <p className="font-Oswald drop-shadow-md mb-3 text-lg sm:text-lg md:text-2xl lg:text-3xl tracking-tight text-amber-300 "><span className="text-amber-600">➲ </span> Ofrecemos atención personalizada a clientes</p>
             </div>
           </div>
 
-          <div className="max-w-md mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
+          <div className="p-1 sm:p-5 mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
             <div className="px-6 py-2">
-              <p className="drop-shadow-md mb-3 text-md sm:text-md md:text-xl lg:text-2xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Garantizamos una comunicación constante</p>
+              <p className="font-Oswald drop-shadow-md mb-3 text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Garantizamos una comunicación constante</p>
             </div>
           </div>
 
-          <div className="max-w-md mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
+          <div className="p-1 sm:p-5 mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
             <div className="px-6 py-2">
-              <p className="drop-shadow-md mb-3 text-md sm:text-md md:text-xl lg:text-2xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Brindamos soluciones integrales y de calidad</p>
+              <p className="font-Oswald drop-shadow-md mb-3 text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Brindamos soluciones integrales y de calidad</p>
             </div>
           </div>
 
-          <div className="max-w-md mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
+          <div className="p-1 sm:p-5 mx-4 mb-5 shadow-lg bg-sky-900 bg-opacity-70">
             <div className="px-6 py-2">
-              <p className="drop-shadow-md mb-3 text-md sm:text-md md:text-xl lg:text-2xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Asesoría completa y resultados profesionales</p>
+              <p className="font-Oswald drop-shadow-md mb-3 text-lg sm:text-xl md:text-2xl lg:text-3xl tracking-tight text-amber-300"><span className="text-amber-600">➲ </span> Asesoría completa y resultados profesionales</p>
             </div>
           </div>
           </div>

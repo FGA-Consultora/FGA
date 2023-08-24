@@ -5,12 +5,12 @@ const Autoproteccion = () => {
   
   <div className="justify-center text-center items-center bg-amber-50">
     <div className="pt-10">
-        <h5 className="py-7 text-xl sm:text-xl md:text-2xl lg:text-3xl font-bold text-sky-900 bg-amber-200">
+        <h5 className="py-7 font-Oswald text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900 bg-amber-200">
             SISTEMAS DE AUTOPROTECCIÓN (LEY 5920 CABA)
         </h5>
     </div>
 
-    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-sm sm:text-base md:text-base lg:text-lg py-8 font-medium justify-center text-center items-center">
+    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-md sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-center items-center">
 
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">
