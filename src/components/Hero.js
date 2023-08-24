@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
               
               <div ref={carrouselSlider1} className={`slider-title ${isSlider1Visible ? 'slider-title-shower' : ''}`}>
-                <h1 className="drop-shadow-lg font-Oswald  pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-200">FGA - Consultora de&nbsp;
+                <h1 className="drop-shadow-lg font-Oswald  pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-400">FGA - Consultora de&nbsp;
                 <strong className="py-3 block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente</h1>
               </div>
               <div className={`slider-text ${isSlider1Visible ? 'slider-text-shower' : ''}`}>
