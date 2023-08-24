@@ -24,7 +24,7 @@ function App() {
       <Navbar/>
 
       <Routes>
-        
+      <Route path='*' element={<><Hero/><About/><CardContainer/></>}/>
         <Route index element={<><Hero/><About/><CardContainer/></>}></Route>
         <Route path='Nosotros' element={<><About/><CardContainer/></>}></Route>
         <Route path='Servicios' element={<CardContainer/>}></Route>
