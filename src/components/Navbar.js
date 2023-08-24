@@ -305,7 +305,7 @@ return <>
 
     {/*Contacto*/}
     <Link to="/Contacto">
-      <button className="font-Roboto text-xl flex bg-amber-500 hover:bg-amber-400 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-5">CONTACTO</button>
+      <button className="font-Roboto text-xl flex bg-amber-600 hover:bg-amber-500 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-5">CONTACTO</button>
     </Link>
     </div>
   </div>

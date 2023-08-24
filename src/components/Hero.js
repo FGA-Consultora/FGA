@@ -19,7 +19,7 @@ const Hero = () => {
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
               
               <div ref={carrouselSlider1} className={`slider-title ${isSlider1Visible ? 'slider-title-shower' : ''}`}>
-                <h1 className="drop-shadow-lg font-Oswald  pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-700 to-amber-400">FGA - Consultora de&nbsp;
+                <h1 className="drop-shadow-lg font-Oswald  pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-400">FGA - Consultora de&nbsp;
                 <strong className="py-3 block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente</h1>
               </div>
               <div className={`slider-text ${isSlider1Visible ? 'slider-text-shower' : ''}`}>
@@ -27,7 +27,7 @@ const Hero = () => {
               </div>
               <div className={`slider-btn mt-4 ${isSlider1Visible ? 'slider-btn-shower' : ''}`}>
                 <Link to="Contactos">
-                  <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-amber-600 text-amber-600">Contacto</button>
+                  <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-amber-500 text-amber-500">Contacto</button>
                 </Link>
               </div>
 
@@ -37,7 +37,7 @@ const Hero = () => {
           
         <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 lg:-ml-20 justify text-center sm:text-left">
           <div ref={carrouselSlider2} className={`slider-title ${isSlider2Visible ? 'slider-title-shower' : ''}`}>
-            <div className="drop-shadow-lg font-Oswald pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-600">FGA - Consultora de&nbsp;
+            <div className="drop-shadow-lg font-Oswald pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-blue-400">FGA - Consultora de&nbsp;
               <strong className="py-3 block font-extrabold text-white">Higiene, Seguridad&nbsp;</strong>y Medioambiente
             </div>
           </div>
