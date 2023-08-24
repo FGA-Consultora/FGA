@@ -26,7 +26,7 @@ function App() {
       <Routes>
 
         <Route index element={<><Hero/><About/><CardContainer/></>}></Route>
-        <Route path='*' element={<><Hero/><About/><CardContainer/></>}/>
+        <Route path='*' element={<Navigate to='Industria'></Navigate>}/>
         <Route path='Nosotros' element={<><About/><CardContainer/></>}></Route>
         <Route path='Servicios' element={<CardContainer/>}></Route>
         <Route path='Contactos' element={<></>}></Route>
