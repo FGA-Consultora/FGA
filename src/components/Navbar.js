@@ -63,7 +63,7 @@ const Navbar = () => {
     
     //Lógica para botones del menú superior
     const menuHandler= () => {
-      setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })},50);
+      setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: 'instant' })},0);
     }
 
 
