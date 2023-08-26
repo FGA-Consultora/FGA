@@ -249,7 +249,7 @@ return <>
     </div>
     {/* LOGO */}
     <div className="navbar-start">
-      <div className="btn btn-ghost mb-5 hover:bg-white z-10">
+      <div onClick={() => menuHandler()} className="btn btn-ghost mb-5 hover:bg-white z-10">
         <Link to="/">
           <Logo/>
         </Link>
@@ -314,7 +314,7 @@ return <>
 
     {/*Contacto*/}
     <Link to="/Contactos">
-      <button className="font-Roboto text-xl flex bg-amber-600 hover:bg-amber-500 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-5">CONTACTO</button>
+      <button onClick={() => menuHandler()} className="font-Roboto text-xl flex bg-amber-600 hover:bg-amber-500 rounded-tl-full rounded-br-full text-white font-semibold text-center self-center py-2 px-5">CONTACTO</button>
     </Link>
     </div>
   </div>
