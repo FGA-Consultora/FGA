@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       {/*Contact*/}
-      <div className="font-Roboto hero h-[47rem] md:h-[45rem] lg:px-20 lg:py-5 mx-auto" style={{ backgroundImage: `url(/form.webp)` }}>
+      <div className="font-Roboto hero h-[60rem] md:h-[55rem] lg:h-[45rem] lg:px-20 lg:py-5 mx-auto" style={{ backgroundImage: `url(/form.webp)` }}>
         <div className="hero-content gap-12 flex-col-reverse lg:flex-row-reverse">
           <div ref={sectionCont1} className={`w-full max-w-[550px] items-center justify-center ${isSectionCont1Visible ? "slider-btn-shower2" : ""}`}>
             <form action="" method="POST">
