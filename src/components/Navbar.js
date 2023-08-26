@@ -62,7 +62,9 @@ const Navbar = () => {
     }
     
     //Lógica para botones del menú superior
-
+    const menuHandler= () => {
+      setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })},50);
+    }
 
 
 
@@ -257,19 +259,19 @@ return <>
     <div className="navbar-center hidden md:flex">
 
       <Link to="/"> 
-        <button onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className="grid grid-flow-col z-10 invisible lg:visible">
+        <button onClick={() => menuHandler()} className="grid grid-flow-col z-10 invisible lg:visible">
           <p className='xl:mx-5 font-Roboto text-sky-800 text-xl btn btn-ghost normal-case px-2'>Home</p>
         </button>
       </Link>
 
       <Link to="/Nosotros"> 
-        <button onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className="grid grid-flow-col z-10 invisible lg:visible">
+        <button onClick={() => menuHandler()} className="grid grid-flow-col z-10 invisible lg:visible">
           <p className='xl:mx-3 font-Roboto hidden mn:flex  text-sky-800 text-xl btn btn-ghost normal-case px-2'>¿Quiénes Somos?</p>
         </button>
       </Link>
 
       <Link to="/Servicios">
-        <button onClick={() => window.scrollTo({ top: 0, left: 0, behavior: 'smooth' })} className='xl:mx-3 font-Roboto drawer-button hidden btn btn-ghost normal-case text-xl lg:flex px-2 text-sky-800'>Servicios</button>
+        <button onClick={() => menuHandler()} className='xl:mx-3 font-Roboto drawer-button hidden btn btn-ghost normal-case text-xl lg:flex px-2 text-sky-800'>Servicios</button>
       </Link>
 
       <button className="btn btn-ghost lowercase grid grid-flow-col text-lg z-10 invisible lg:visible px-2" onClick={() => window.location = 'mailto:info@fgaconsultora.com.ar'}>
