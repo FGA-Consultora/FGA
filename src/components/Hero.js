@@ -30,9 +30,8 @@ const Hero = () => {
                   <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-amber-500 text-amber-500">Contacto</button>
                 </Link>
               </div>
-              <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider1Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
-
-          </div>  
+            </div>  
+            
         </div>
         <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/hero2.webp)` }}>
           
@@ -50,7 +49,6 @@ const Hero = () => {
               <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-blue-400 text-blue-400">Contacto</button>
             </Link>
           </div>
-          <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider2Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
         </div>
 
         </div>
@@ -70,7 +68,6 @@ const Hero = () => {
                 <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-green-400 text-green-400">Contacto</button>
               </Link>
             </div>
-            <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider3Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
           </div>  
 
         </div>
