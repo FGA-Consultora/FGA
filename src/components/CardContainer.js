@@ -24,7 +24,7 @@ const CardContainer = () => {
       {/*Card Section Title*/}
       <div className="max-w-full flex justify-center text-center items-center pt-4 bg-amber-50">
         <div className="mb-5 pb-2">
-          <p className="font-Bebas drop-shadow-md text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-amber-500 pt-4">Nuestros Servicios</p>
+          <p className="font-Bebas drop-shadow-md text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-amber-500 pt-4">Nuestros Servicios</p>
         </div>
       </div>
 

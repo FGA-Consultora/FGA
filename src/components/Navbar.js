@@ -38,10 +38,11 @@ const Navbar = () => {
       
       setTimeout(()=>{clickCondition()}, 200);
       miCheckbox()
+      //window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
       
     }
   }
-    
+    //Lógica si se abre y se cierra el menú en la misma página
     const clickHandler2= () => {
       setIsOpen(!isOpen);
       if (isOpen === true) {
@@ -231,7 +232,7 @@ return <>
   </div>
 
   {/*Navbar*/}
-  <div className="navbar bg-white text-black">
+  <div className="navbar fixed z-10 bg-white text-black">
     {/*Menu Button*/}
     <div className="flex-none">
       <label htmlFor="my-drawer" onClick={clickHandler} className="btn btn-circle btn-ghost ml-3 z-10">
@@ -309,6 +310,7 @@ return <>
     </Link>
     </div>
   </div>
+  <div className='h-20'></div>
 </>;
 }
 
