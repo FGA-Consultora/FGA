@@ -38,9 +38,10 @@ const Contact = () => {
 
           <div ref={sectionCont2} className={`justify-center text-center items-center mx-8 max-w-[550px] sm:max-w-none lg:mx-18 slider-btn ${isSectionCont2Visible ? "slider-btn-shower2" : ""}`}>
             <p className="text-4xl font-semibold text-amber-500 pb-4">Envianos un mensaje y responderemos a la brevedad</p>
-            <p className=" text-2xl font-semibold text-sky-900">Podés enviarnos un mail a info@fgaconsultora.com.ar</p>
+            <p className=" text-2xl font-semibold text-sky-900">Podés enviarnos un mail a <button className="hover:text-sky-700" onClick={() => window.location = 'mailto:info@fgaconsultora.com.ar'}>info@fgaconsultora.com.ar</button></p>
             <br></br>
-            <p className="text-2xl font-semibold text-sky-900">También podés llamarnos directamente a +54 XXXX-XXXX.</p>
+            <p className="text-2xl font-semibold text-sky-900">También podés llamarnos o enviarnos un mensaje a <a className="hover:text-sky-700" href="https://wa.link/997rar">+54 11 2395-9319</a></p>
+            <div className={`mt-2 mx-auto h-44 w-44 bg-cover slider-btn ${isSectionCont2Visible ? "slider-btn-shower2" : ""}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
           </div>
         </div>
       </div>

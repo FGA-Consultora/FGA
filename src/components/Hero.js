@@ -16,7 +16,7 @@ const Hero = () => {
       {/*Edited Controls*/}
       <Carousel leftControl={<div className="-z-1"></div>} rightControl={<div className="-z-1"></div>} border="none" slideInterval={5000}>
         <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/hero1.webp)` }}>
-          <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify text-center sm:text-left">
+          <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify items-center text-center sm:text-left">
               
               <div ref={carrouselSlider1} className={`slider-title ${isSlider1Visible ? 'slider-title-shower' : ''}`}>
                 <h1 className="drop-shadow-lg font-Oswald  pb-2 text-5xl md:text-7xl sm:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-amber-400">FGA - Consultora de&nbsp;
@@ -30,6 +30,7 @@ const Hero = () => {
                   <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-amber-500 text-amber-500">Contacto</button>
                 </Link>
               </div>
+              <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider1Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
 
           </div>  
         </div>
@@ -49,6 +50,7 @@ const Hero = () => {
               <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-blue-400 text-blue-400">Contacto</button>
             </Link>
           </div>
+          <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider2Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
         </div>
 
         </div>
@@ -68,6 +70,7 @@ const Hero = () => {
                 <button className="drop-shadow-lg font-Roboto text-lg md:ml-5 btn btn-outline border-green-400 text-green-400">Contacto</button>
               </Link>
             </div>
+            <div className={`mt-2 mx-auto sm:ml-0 md:ml-5 h-44 w-44 bg-cover slider-btn ${isSlider3Visible ? 'slider-btn-shower' : ''}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
           </div>  
 
         </div>

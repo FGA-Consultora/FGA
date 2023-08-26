@@ -61,7 +61,7 @@ const Footer = () => {
       <div className="link link-hover" onClick={scrollToTop}>Contacto</div>
     </Link>
     {/*Si o si tiene que ser <a> para que funcione el href */}
-    <a href="https://wa.me/+54XXXXXXXXXX?" className="link link-hover">+54 XXXX-XXXX</a>
+    <a href="https://wa.link/997rar" className="link link-hover">+54 11 2395-9319</a>
 
     <div className="link link-hover" onClick={() => window.location = 'mailto:info@fgaconsultora.com.ar'}>info&#64;fgaco&#110;&#115;ul&#116;ora&#46;com&#46;ar</div>
 
