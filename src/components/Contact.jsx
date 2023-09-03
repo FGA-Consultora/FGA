@@ -78,6 +78,7 @@ const Contact = () => {
       }
     }
     else {
+      
       //Falla desde el CAPTCHA
       setFormFail(true);
       setFormSuccess(false);
