@@ -107,55 +107,55 @@ return <>
         <ul className="menu font-semibold text-lg sm:text-xl text-sky-800">
 
             <Link to='/'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Home</label>
               </li>
             </Link>
 
             <Link to='/Industria'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col  mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Servicios de Industria</label>
               </li>
             </Link>
 
             <Link to='/Construccion'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Construcción</label>
               </li>
             </Link>
 
             <Link to='/Capacitaciones'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Capacitaciones (Res. 905/15)</label>
               </li>
             </Link>
 
             <Link to='/Medioambiente'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Medioambiente</label>
               </li>
             </Link>
 
             <Link to='/Autoproteccion'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Sistemas de Autoprotección</label>
               </li>
             </Link>
 
             <Link to='/Consorcio'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Servicios de Consorcio</label>
               </li>
             </Link>
 
             <Link to='/Seguridad'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col mt-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Programa de Seguridad en Obra</label>
               </li>
             </Link>
 
             <Link to='/Mediciones'>
-              <li className='grid grid-flow-col'>
+              <li className='grid grid-flow-col my-2'>
                 <label htmlFor="my-drawer" onClick={clickHandler}><span className='text-amber-500 text-lg'>&#10095;</span>Mediciones</label>
               </li>
             </Link>

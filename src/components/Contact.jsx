@@ -3,6 +3,7 @@ import {useInView} from "react-intersection-observer"
 import ReCAPTCHA from "react-google-recaptcha";
 
 const Contact = () => {
+
   const {ref: sectionCont1, inView: isSectionCont1Visible} = useInView({threshold: 0.1, triggerOnce: true})
   const {ref: sectionCont2, inView: isSectionCont2Visible} = useInView({threshold: 0.1, triggerOnce: true})
 
@@ -17,10 +18,6 @@ const Contact = () => {
 
   //useRef RECAPTCHA
   const captcha = useRef(null);
-
-  const onChange = () => {
-    console.log("respuesta: ", captcha.current.getValue());
-  }
 
   //Función para todo el Form
   const submitHandler = (event) => {
@@ -124,9 +121,7 @@ const Contact = () => {
               {/*BOTON RECAPTCHA*/}
               <ReCAPTCHA className="my-2"
                   sitekey="6LcrK_YnAAAAAIznHpZKdPHFeC-NvRk9if_2nsKK"
-                  ref={captcha}
-                  onChange={onChange}
-                  
+                  ref={captcha}    
               />
 
               {/*BOTON ENVIAR*/}
