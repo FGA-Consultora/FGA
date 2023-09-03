@@ -78,7 +78,7 @@ const Contact = () => {
       }
     }
     else {
-      
+
       //Falla desde el CAPTCHA
       setFormFail(true);
       setFormSuccess(false);
@@ -121,13 +121,14 @@ const Contact = () => {
                 </div>
               }
 
-              {/*BOTON RECAPTCHA*/}
+              {/*BOTON RECAPTCHA
               <ReCAPTCHA className="my-2"
                   sitekey="6LcrK_YnAAAAAIznHpZKdPHFeC-NvRk9if_2nsKK"
                   ref={captcha}
                   onChange={onChange}
                   
               />
+              */}
 
               {/*BOTON ENVIAR*/}
               <div className="text-center">
