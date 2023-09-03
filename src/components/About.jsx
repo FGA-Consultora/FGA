@@ -10,7 +10,7 @@ const About = () => {
   {/*About Us Section*/}
   <div className="hero h-[55rem] sm:h-[48rem] lg:h-[45rem]  bg-white lg:px-20 lg:py-5 mx-auto">
         <div ref={aboutUs} className="hero-content flex-col lg:flex-row">
-          <img src="../src/img/deal.webp" alt="..." className={`rounded-lg shadow-2xl max-w-sm slider-text ${isAboutUsVisible ? "slider-text-shower" : ""}`} />
+          <img src="/deal.webp" alt="..." className={`rounded-lg shadow-2xl max-w-sm slider-text ${isAboutUsVisible ? "slider-text-shower" : ""}`} />
           <div className={`sm:mx-10 md:mx-18 lg:mx-12 slider-title ${isAboutUsVisible ? "slider-title-shower" : ""}`}>
             <p className="italic font-Bebas drop-shadow-md max-w-full flex justify-center text-center items-center text-5xl sm:text-6xl md:text-7xl font-semibold  text-amber-500 px-2">¿Quiénes somos?</p>
             <p className="font-Roboto py-6 text-xl md:text-2xl text-sky-800">Somos un equipo de profesionales con el objetivo de asistir a nuestros clientes en materia de Seguridad, Higiene y Medioambiente. Garantizamos excelentes servicios, acompañamiento en todo el proceso y la mejor asesoría hoy en día. Nuestros clientes son la prioridad y ayudamos a que sus objetivos se cumplan.</p>
@@ -43,7 +43,7 @@ const About = () => {
 
       {/*Why us*/}
       {/*Card Section Title*/}
-      <div className="pt-4 h-[45rem] bg-cover" style={{ backgroundImage: `url(../src/img/About.webp)` }}>
+      <div className="pt-4 h-[45rem] bg-cover" style={{ backgroundImage: `url(/About.webp)` }}>
         <div className="mb-5 pb-2 text-center ">
           <p className="font-Bebas drop-shadow-lg pt-5 text-7xl font-medium text-amber-500 px-2">¿Por qué elegirnos?</p>
         </div>

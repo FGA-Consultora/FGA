@@ -90,7 +90,7 @@ const Contact = () => {
   return (
     <>
       {/*Contact*/}
-      <div className="font-Roboto hero h-[75rem] md:h-[65rem] lg:h-[45rem] lg:px-20 lg:py-5 mx-auto" style={{ backgroundImage: `url(../src/img/form.webp)` }}>
+      <div className="font-Roboto hero h-[75rem] md:h-[65rem] lg:h-[45rem] lg:px-20 lg:py-5 mx-auto" style={{ backgroundImage: `url(/form.webp)` }}>
         <div className="hero-content gap-12 flex-col-reverse lg:flex-row-reverse">
           <div ref={sectionCont1} className={`w-full max-w-[550px] items-center justify-center ${isSectionCont1Visible ? "slider-btn-shower2" : ""}`}>
             <form id="form" onSubmit={submitHandler} method="POST">
@@ -153,7 +153,7 @@ const Contact = () => {
             <p className=" text-2xl font-semibold text-sky-900">Podés enviarnos un mail a <button className="hover:text-sky-700" onClick={() => window.location = 'mailto:info@fgaconsultora.com.ar'}>info@fgaconsultora.com.ar</button></p>
             <br></br>
             <p className="text-2xl font-semibold text-sky-900">También podés llamarnos o enviarnos un mensaje a <a className="hover:text-sky-700" href="https://wa.link/997rar">+54 11 2395-9319</a></p>
-            <div className={`mt-2 mx-auto h-44 w-44 bg-cover slider-btn ${isSectionCont2Visible ? "slider-btn-shower2" : ""}`} style={{ backgroundImage: `url(../src/img/QR.webp)` }}></div>
+            <div className={`mt-2 mx-auto h-44 w-44 bg-cover slider-btn ${isSectionCont2Visible ? "slider-btn-shower2" : ""}`} style={{ backgroundImage: `url(/QR.webp)` }}></div>
           </div>
         </div>
       </div>

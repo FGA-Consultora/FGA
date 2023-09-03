@@ -15,7 +15,7 @@ const Hero = () => {
     <div className="h-[40rem] max-w-full">
       {/*Edited Controls*/}
       <Carousel leftControl={<div className="-z-1"></div>} rightControl={<div className="-z-1"></div>} border="none" slideInterval={5000}>
-        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(../src/img/hero1.webp)` }}>
+        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/hero1.webp)` }}>
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 justify items-center text-center sm:text-left">
               
               <div ref={carrouselSlider1} className={`slider-title ${isSlider1Visible ? 'slider-title-shower' : ''}`}>
@@ -33,7 +33,7 @@ const Hero = () => {
             </div>  
             
         </div>
-        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(../src/img/hero2.webp)` }}>
+        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/hero2.webp)` }}>
           
         <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 lg:-ml-20 justify text-center sm:text-left">
           <div ref={carrouselSlider2} className={`slider-title ${isSlider2Visible ? 'slider-title-shower' : ''}`}>
@@ -52,7 +52,7 @@ const Hero = () => {
         </div>
 
         </div>
-        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(../src/img/hero3.webp)` }}>
+        <div className="flex h-full items-center justify-center bg-cover" style={{ backgroundImage: `url(/hero3.webp)` }}>
 
           <div className="flex-col sm:mr-24 md:mr-48 lg:mr-96 lg:-ml-20 justify text-center sm:text-left">
             <div ref={carrouselSlider3} className={`slider-title ${isSlider3Visible ? 'slider-title-shower' : ''}`}>
