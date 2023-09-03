@@ -43,7 +43,7 @@ const About = () => {
 
       {/*Why us*/}
       {/*Card Section Title*/}
-      <div className="pt-4 h-[45rem] bg-cover" style={{ backgroundImage: `url(/About.webp)` }}>
+      <div className="pt-4 h-[45rem] bg-cover" style={{ backgroundImage: `url(/about.webp)` }}>
         <div className="mb-5 pb-2 text-center ">
           <p className="font-Bebas drop-shadow-lg pt-5 text-7xl font-medium text-amber-500 px-2">¿Por qué elegirnos?</p>
         </div>

@@ -54,7 +54,7 @@ function App() {
           statusMessage="Disponible"
           chatMessage="¡Hola! 🤝 ¿En qué puedo ayudarte?"
           placeholder="Escribe un mensaje..."
-          avatar="src/img/avatar.webp"
+          avatar="/avatar.webp"
           notification
           notificationDelay={10000}
           chatboxClassName="text-black"
