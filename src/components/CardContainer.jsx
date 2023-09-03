@@ -32,7 +32,7 @@ const CardContainer = () => {
         <div className="grid lg:grid-cols-3 mx-auto sm:grid-cols-2">
 
           <div ref={CardObs1} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs1Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card1.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card1.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Industria" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
@@ -51,7 +51,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs2} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs2Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card1000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card1000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Construccion" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Obras en Construcción</h4>
@@ -70,7 +70,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs3} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs3Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card6000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card6000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Capacitaciones" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Capacitaciones (Res. 905/15)</h4>
@@ -89,7 +89,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs4} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs4Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card3000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card3000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Medioambiente" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Medioambiente</h4>
@@ -108,7 +108,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs5} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs5Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card7000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card7000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Autoproteccion" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Sistemas de Autoprotección (Ley 5920 CABA)</h4>
@@ -127,7 +127,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs6} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs6Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card555.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card555.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Consorcio" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Servicios de Consorcio</h4>
@@ -146,7 +146,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs7} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs7Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card5000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card5000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Seguridad" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Programas de Seguridad en Obra</h4>
@@ -165,7 +165,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs8} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs8Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card4000.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card4000.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Mediciones" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Mediciones</h4>
@@ -184,7 +184,7 @@ const CardContainer = () => {
           </div>
 
           <div ref={CardObs9} className={`max-w-xs mx-4 mb-5 rounded-lg shadow-lg bg-white slider-btn ${isCardObs9Visible ? "slider-btn-shower2" : ""}`}>
-            <img className="w-full h-48" src="src/img/card6.webp" alt="product" />
+            <img className="w-full h-48" src="../src/img/card6.webp" alt="product" />
             <div className="px-6 py-4">
               <Link to="/Contactos" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Pida una Cotización</h4>
