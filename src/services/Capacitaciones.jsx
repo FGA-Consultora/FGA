@@ -1,16 +1,16 @@
 import React from "react";
 
-const Consorcio = () => {
+const Capacitaciones = () => {
   return <>
   
   <div className="justify-center text-center items-center bg-amber-50">
     <div className="pt-10">
         <h5 className="py-7 font-Oswald text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900 bg-amber-200">
-            SERVICIOS DE CONSORCIO
+            CAPACITACIONES (RES. 905/15)
         </h5>
     </div>
 
-    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-md sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-center items-center">
+    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-lg sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-left items-center">
 
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">
@@ -21,7 +21,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Relevamiento general de riesgos de trabajo.
+              Instrucciones de Seguridad e Higiene.
             </p>
         </li>
 
@@ -34,7 +34,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Control de todos los elementos constructivos del edificio.
+              Capacitaciones específicas según actividad.
             </p>
         </li>
 
@@ -47,7 +47,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Asesoramiento legal técnico según Ley Nacional.
+              Entrenamiento de brigadas de Emergencia.
             </p>
         </li>
 
@@ -60,7 +60,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Análisis de potabilidad de agua.
+                Trabajos en Altura.
             </p>
         </li>
 
@@ -73,7 +73,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Simulacro y Plan de Evacuación.
+                Espacios Confinados.
             </p>
         </li>
 
@@ -86,7 +86,7 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Normas para Contratistas.
+                Incendio y Extintores.
             </p>
         </li>
 
@@ -99,14 +99,14 @@ const Consorcio = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-              Medición de puesta tierra y continuidad de las masas. 
+              RCP, Primeros Auxilios + DEA.
             </p>
         </li>
 
     </ul>
-  </div> 
+</div>
   
   </>;
 };
 
-export default Consorcio;
+export default Capacitaciones;

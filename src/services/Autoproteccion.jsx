@@ -10,7 +10,7 @@ const Autoproteccion = () => {
         </h5>
     </div>
 
-    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-md sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-center items-center">
+    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-lg sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-left items-center">
 
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">

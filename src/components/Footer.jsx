@@ -78,9 +78,9 @@ const Footer = () => {
     */}
 </div>
 
-<div className="font-Roboto text-lg footer footer-center p-2 bg-gradient-to-r from-gray-300 to-white text-black shadow-inner">
+<div className="font-Roboto text-lg footer footer-center p-2 bg-sky-900 text-white shadow-inner">
   <div>
-    <p>Copyright © 2023 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-violet-900 font-strong">Web Ex Machina</strong></p>
+    <p>Copyright © 2023 - FGA Consultora de Higiene, Seguridad y Medioambiente | Design by <strong className="text-purple-400 font-strong">Web Ex Machina</strong></p>
   </div>
 </div>
 

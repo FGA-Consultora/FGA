@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 
@@ -63,15 +63,10 @@ const Navbar = () => {
     
     //Lógica para botones del menú superior
     const menuHandler= () => {
-      setTimeout(()=>{window.scrollTo({ top: 0, left: 0, behavior: 'instant' })},0);
-    }
-
-
-
-
-    //SI SIRVE, PORQUE PUEDE HACER F5 LA PAGINA PRINCIPAL.No sirve porque no tengo server al subirlo. También el drawer no sale y vuelve a refreshear la pagina anterior window.location.reload()
-    //en el button =      onClick={() => window.location.reload()}
-  
+      setTimeout(()=>{
+        window.scrollTo({ top: 0, left: 0, behavior: 'instant' })
+      },0);
+    } 
 
  /* LOGICA DE ... ACTUALIZAR TWITTER
   //Listener Dropdown
@@ -103,13 +98,13 @@ return <>
   {/*Drawer Button clickHandler*/}
   {/*IMPORTANTE USAR clickHandler2 o no funciona salir tocando fuera del drawer*/}
       <label htmlFor="my-drawer" className="drawer-overlay" onClick={clickHandler2} ></label>
-      <ul className='font-Roboto text-lg p-2 overflow-y-auto w-80 bg-white flex-col scroll_custom scroll_black'>        
+      <ul className='font-Roboto text-lg p-2 overflow-y-auto w-80 h-screen bg-white flex-col scroll_custom scroll_black'>        
   {/*IMPORTANTE USAR clickHandler2 o no funciona la X de Servicio*/}
         {/*Drawer Title*/}
         <li className='flex mb-1'><div className='font-Oswald mr-16 ml-24 mt-2.5 font-bold text-2xl text-sky-800'>SERVICIOS</div><label htmlFor="my-drawer"className='btn btn-ghost btn-circle' onClick={clickHandler2} ><svg className="fill-current text-amber-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg></label></li>
 
         {/*Collapse inside Drawer*/}
-        <ul className="menu font-semibold text-sky-800">
+        <ul className="menu font-semibold text-lg sm:text-xl text-sky-800">
 
             <Link to='/'>
               <li className='grid grid-flow-col'>
@@ -166,67 +161,6 @@ return <>
             </Link>
             
           </ul>
-        
-        {/*Enlaces con dropdown complejos no usados
-
-        <div tabIndex="0" className="collapse-arrow collapse">
-          <input className="pr-72" type="checkbox" />
-          <div className="collapse-title text-lg font-medium">Servicio de Industrias</div>
-          <ul className="collapse-content menu">
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Servicio Integral de Seguridad e Higiene</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Mediciones en el Ambiente Laboral</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Evaluación y Gestion de Riesgos</label></li>
-          </ul>
-        </div>
-
-        <div tabIndex="0" className="collapse-arrow collapse">
-          <input className="pr-72" type="checkbox" />
-          <div className="collapse-title text-lg font-medium">Protección contra incendios</div>
-          <ul className="collapse-content menu">
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Sistemas de Autoprotección (Ley 5920)</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Planes de Evacuación y Simulacros</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Estudio de Carga de Fuego</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Entrenamiento de Brigadas contra Incendio</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Capacitación y Entrenamiento sobre el manejo de Extintores e Hidrantes</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Ignifugado (Aplicación de Material Ignífugo y Certificación)</label></li>
-          </ul>
-        </div>
-
-        <div tabIndex="0" className="collapse-arrow collapse">
-          <input className="pr-72" type="checkbox" />
-          <div className="collapse-title text-lg font-medium">Mediciones</div>
-          <ul className="collapse-content menu">
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Medición de Ruido</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Iluminación</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Puesta a Tierra y Continuidad de las Masas</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Testeo de Disyuntores</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Medición de Co2 (Dióxido de Carbono)</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Ventilación</label></li>
-          </ul>
-        </div>
-
-        <div tabIndex="0" className="collapse-arrow collapse">
-          <input className="pr-72" type="checkbox" />
-          <div className="collapse-title text-lg font-medium">Obras en Construcción</div>
-          <ul className="collapse-content menu">
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Programa de Seguridad y Aviso de Obra</label></li>
-          </ul>
-        </div>
-
-        <div tabIndex="0" className="collapse-arrow collapse">
-          <input className="pr-72" type="checkbox" />
-          <div className="collapse-title text-lg font-medium">Medioambiente</div>
-          <ul className="collapse-content menu">
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Asesoramiento Legal</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Trámites y Habilitaciones</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Mediciones Ambientales</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Gestion de Efluentes Liquidos</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Gestion de Efluentes Gaseosos</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Gestion de Efluentes Sólidos</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Gestion Integral de Residuos</label></li>
-            <li><label className="font-medium" htmlFor="my-drawer" onClick={clickHandler}>Impacto Ambiental</label></li>
-          </ul>
-        </div>*/}
 
         {/*CONTACTO in Drawer*/}
         <Link to="Contactos">
@@ -234,7 +168,7 @@ return <>
         </Link>
 
         {/*Button disabled for mobile browser response*/}
-        <li ><label htmlFor="my-drawer" className='btn w-full mb-5 btn-disabled bg-white'></label> </li>
+        <li ><div className='w-full mb-5 bg-white'></div> </li>
       </ul>
     </div>
   </div>

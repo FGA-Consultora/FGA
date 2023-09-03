@@ -1,16 +1,16 @@
 import React from "react";
 
-const Industria = () => {
+const Construccion = () => {
   return <>
   
-<div className="font-Roboto justify-center text-center items-center bg-amber-50">
+  <div className="justify-center text-center items-center bg-amber-50">
     <div className="pt-10">
-        <h5 className="font-Oswald py-7 text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900 bg-amber-200">
-            SERVICIOS DE INDUSTRIA
+        <h5 className="py-7 font-Oswald text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold text-sky-900 bg-amber-200">
+            OBRAS EN CONSTRUCCIÓN
         </h5>
     </div>
 
-    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 text-md sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-center items-center">
+    <ul className="sm:ml-32 md:ml-48 lg:ml-96 space-y-5 sm:space-y-6 md:space-y-7 lg:space-y-8 font-Roboto text-lg sm:text-lg md:text-xl lg:text-2xl py-8 font-medium justify-center text-left items-center">
 
         <li className="flex items-start lg:col-span-1">
             <div className="flex-shrink-0">
@@ -21,7 +21,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Asesoramiento Legal Técnico según Ley 12587.
+              Asesoramiento legal técnico según Dec. 911/96.
             </p>
         </li>
 
@@ -34,7 +34,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Capacitaciones específicas segun la actividad que desarrolle.
+                Visitas a Obra.
             </p>
         </li>
 
@@ -47,7 +47,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Procedimientos de trabajo seguros.
+                Programa de Seguridad.
             </p>
         </li>
 
@@ -60,7 +60,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Evaluación de riesgo por puestos de trabajo.
+                Técnico Permanente.
             </p>
         </li>
 
@@ -73,7 +73,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Asesoramiento sobre entrega y uso de elementos de protección personal.
+                ATS
             </p>
         </li>
 
@@ -86,7 +86,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Auditorías y diagnósticos de todos los elementos constructivos del local.
+                Demoliciones y Excavaciones.
             </p>
         </li>
 
@@ -99,7 +99,7 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Mediciones Ambientales.
+                Capacitaciones generales y específicas.
             </p>
         </li>
 
@@ -112,66 +112,14 @@ const Industria = () => {
                 </svg>
             </div>
             <p className="ml-3 leading-5 text-sky-700">
-                Asesoramiento sobre control físico, químico y biológico.
-            </p>
-        </li>
-
-        <li className="flex items-start lg:col-span-1">
-            <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"></path>
-                </svg>
-            </div>
-            <p className="ml-3 leading-5 text-sky-700">
-                Planes de evacuación.
-            </p>
-        </li>
-
-        <li className="flex items-start lg:col-span-1">
-            <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"></path>
-                </svg>
-            </div>
-            <p className="ml-3 leading-5 text-sky-700">
-                Estudio de carga de fuego y cantidad de extintores.
-            </p>
-        </li>
-
-        <li className="flex items-start lg:col-span-1">
-            <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"></path>
-                </svg>
-            </div>
-            <p className="ml-3 leading-5 text-sky-700">
-                RAR y RGRL
-            </p>
-        </li>
-
-        <li className="flex items-start lg:col-span-1">
-            <div className="flex-shrink-0">
-                <svg className="w-5 h-5 text-amber-300" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd"
-                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                        clipRule="evenodd"></path>
-                </svg>
-            </div>
-            <p className="ml-3 leading-5 text-sky-700">
-                Presentación y respuesta ante inspecciones.
+                Trabajo en altura y espacios confinados.
             </p>
         </li>
 
     </ul>
 </div>
-
+  
   </>;
 };
 
-export default Industria;
+export default Construccion;
