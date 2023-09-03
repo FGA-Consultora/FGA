@@ -2,9 +2,6 @@ import { useState } from 'react';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
 
-
-
-
 const Navbar = () => {
   //Drawer
   const [isOpen, setIsOpen] = useState(false);
