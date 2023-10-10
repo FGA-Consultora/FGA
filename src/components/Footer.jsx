@@ -69,7 +69,7 @@ const Footer = () => {
   </div> 
 </div>
 
-<div className="pb-3 h-full flex items-center justify-center  bg-sky-800">
+<div className="pb-3 pt-1 h-full flex items-center justify-center  bg-sky-800">
     <div className="flex items-center justify-center gap-x-10 ">
         <a href="https://www.linkedin.com/company/fga-consultora-de-seguridad-e-higiene/" aria-label="Find us on LinkedIn">
             <svg className="h-10 w-10 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
