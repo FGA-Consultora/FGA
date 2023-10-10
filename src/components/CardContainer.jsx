@@ -37,7 +37,7 @@ const CardContainer = () => {
               <Link to="/Industria" onClick={scrollToTop}>
                 <h4 className="mb-3 text-2xl font-semibold tracking-tight text-amber-600">Servicio de Industrias</h4>
               </Link>
-              <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según Ley 12587. Procedimientos de trabajo seguros...</p>
+              <p className="leading-normal text-sky-700">Asesoramiento Legal Técnico según Ley 19587. Procedimientos de trabajo seguros...</p>
             </div>
             <Link to="/Industria" onClick={scrollToTop}>
             <button className="m-3 ml-48 grid grid-flow-col text-amber-600 hover:text-amber-500">
