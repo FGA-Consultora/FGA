@@ -9,7 +9,7 @@ const Footer = () => {
   return <>
   
   <footer>
-  <div className="font-Oswald text-lg footer pl-10 p-8 bg-sky-800 text-white">
+  <div className="font-Oswald text-lg footer pl-10 p-3 bg-sky-800 text-white">
 
   <div>
     <span className="footer-title">Servicios</span>
@@ -69,7 +69,7 @@ const Footer = () => {
   </div> 
 </div>
 
-<div className="py-2 h-full flex items-center justify-center border-sky-800  bg-sky-800">
+<div className="py-5 h-full flex items-center justify-center border-sky-800  bg-sky-800">
     <div className="flex items-center justify-center gap-x-10 ">
         <a href="https://www.linkedin.com/company/fga-consultora-de-seguridad-e-higiene/" aria-label="Find us on LinkedIn">
             <svg className="h-10 w-10 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
