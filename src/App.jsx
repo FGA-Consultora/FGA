@@ -50,7 +50,7 @@ function App() {
           allowEsc
           allowClickAway
           chatboxHeight={350}
-          phoneNumber="+5411XXXXXXXX"
+          phoneNumber="+541123959319"
           statusMessage="Disponible"
           chatMessage="¡Hola! 🤝 ¿En qué puedo ayudarte?"
           placeholder="Escribe un mensaje..."
